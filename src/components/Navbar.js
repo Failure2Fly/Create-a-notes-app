@@ -1,5 +1,7 @@
 import React from 'react'
 import Cards from './Cards'
+import Welcome from './Welcome'
+import CreateNote from './CreateNote'
 
 class Navbar extends React.Component {
 
@@ -17,10 +19,9 @@ class Navbar extends React.Component {
               </p>
             </div>
               <p className="panel-tabs">
-                <a className="is-active">All</a>
-                <a>Public</a>
-                <a>Private</a>
-                <a>Sources</a>
+                <a className="is-active">All Notes</a>
+                <a>Tags</a>
+                <a>Notebooks</a>
               </p>
                 <a className="panel-block is-active">
                   <span className="panel-icon">
@@ -70,21 +71,19 @@ class Navbar extends React.Component {
             </nav>
         </div>
            
-        <div className="tile is-ancestor">
-            <div className="tile is-vertical is-12">
+        <div className="tile is-ancestor is-gapless">
+            <div className="tile is-vertical">
                 <div className="tile">
                     <div className="tile is-parent is-vertical">
-                        <article className="tile is-child notification is-primary">
+                        <article id="header" className="tile is-child notification">
                         <p className="title">Vertical...</p>
                         <p className="subtitle">Top tile</p>
                         </article>
-                    </div>
-                </div>
-                <Cards/>
+                    </div>                  
+                </div> 
+                <Welcome />
             </div>
         </div>
-
-
     </div>
     
            

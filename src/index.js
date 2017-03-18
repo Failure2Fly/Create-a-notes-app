@@ -11,6 +11,6 @@ import Routes from './Routes';
 
 // Render root component
 ReactDOM.render(
-    <Routes />,
+    <Routes/>,
     document.getElementById('root')
 );

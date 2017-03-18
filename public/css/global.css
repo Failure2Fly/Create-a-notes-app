@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+#icon:hover{
+    transform: scale(1.5);    
+    transition: 1s ease-out;
+}
+#createNote {
+    height: 550px;
+}
+#writeNote {
+    height: 400px;
+}
+#welcome {
+    margin: 40px;
+}
+#header {
+    background-color: #A63446;
+    color: white;
+}
