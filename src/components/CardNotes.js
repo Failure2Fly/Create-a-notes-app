@@ -7,7 +7,7 @@ class CardNotes extends React.Component {
     <div className="card">
   <header className="card-header">
     <p className="card-header-title">
-      Component
+      Title
     </p>
     <a className="card-header-icon">
       <span className="icon">
@@ -20,9 +20,14 @@ class CardNotes extends React.Component {
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
       <a>@bulmaio</a>. <a>#css</a> <a>#responsive</a>
       <br/>
-      <small>11:09 PM - 1 Jan 2016</small>
+      <small>12:00 PM - 19 Mar 2017</small>
     </div>
   </div>
+  <footer className="card-footer">
+  <p className="card-footer-item">
+      URL
+    </p>
+  </footer>
   <footer className="card-footer">
     <p className="card-footer-item">
       <span>

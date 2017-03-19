@@ -8,16 +8,41 @@ img {
     transform: scale(1.5);    
     transition: 1s ease-out;
 }
+#logo {
+    height: 100px;
+    width: 100px;
+}
+#newNoteButton {
+    float: right;
+    font-size: 24px;
+    color: #077187;
+    z-index: 1;
+}
 #createNote {
-    height: 550px;
+    height: 700px;
+    height: 500px;
 }
 #writeNote {
-    height: 400px;
+    height: 350px;
 }
 #welcome {
     margin: 40px;
 }
 #header {
-    background-color: #A63446;
+    background-color: #76E7CD;
+    color: black;
+    font-family: 'Petit Formal Script', cursive;
+}
+#headerOutline {
+    background-color: #76E7CD;
+}
+#side-bar {
+    background-color: #9ECE9A;
+}
+#random-quote{
+    background-color: #077187;
     color: white;
+}
+#footer {
+    background-color: #077187;
 }

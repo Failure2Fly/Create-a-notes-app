@@ -5,11 +5,13 @@ import CreateNote from './CreateNote'
 
 class Navbar extends React.Component {
 
+
   render() {
-    return <div className="columns is-gapless">
+    return <div>
+    <div className="columns is-gapless">
     <div className="column is-2">
-    <nav className="panel">
-              <p className="panel-heading">Repositories</p>
+    <nav id="side-bar" className="panel">
+              <p id="random-quote" className="panel-heading">I think I did pretty well, considering I started out with nothing but a bunch of blank paper.<p><br/> - Steve Martin</p></p>
             <div className="panel-block">
               <p className="control has-icon">
                 <input className="input is-small" type="text" placeholder="Search" />
@@ -23,45 +25,43 @@ class Navbar extends React.Component {
                 <a>Tags</a>
                 <a>Notebooks</a>
               </p>
-                <a className="panel-block is-active">
+                <a className="panel-block">
                   <span className="panel-icon">
-                    <i className="fa fa-book"></i>
+                    <i className="fa fa-plus-square-o" aria-hidden="true"></i>
                   </span>
-                  bulma
+                  Add Notebook
                 </a>
                 <a className="panel-block">
                   <span className="panel-icon">
                     <i className="fa fa-book"></i>
                   </span>
-                  marksheet
+                  Songs
                 </a>
                 <a className="panel-block">
                   <span className="panel-icon">
                     <i className="fa fa-book"></i>
                   </span>
-                  minireset.css
+                  Stories
                 </a>
                 <a className="panel-block">
                   <span className="panel-icon">
                     <i className="fa fa-book"></i>
                   </span>
-                  jgthms.github.io
+                  Grocery List
                 </a>
                 <a className="panel-block">
                   <span className="panel-icon">
-                    <i className="fa fa-code-fork"></i>
+                    <i className="fa fa-book"></i>
                   </span>
-                  daniellowtw/infBoard
+                  Poems
                 </a>
                 <a className="panel-block">
                   <span className="panel-icon">
-                    <i className="fa fa-code-fork"></i>
+                    <i className="fa fa-book"></i>
                   </span>
-                  mojs
+                  Ramblings
                 </a>
                 <label className="panel-block">
-                  <input type="checkbox" />
-                  Remember me
                 </label>
               <div className="panel-block">
                 <button className="button is-primary is-outlined is-fullwidth">
@@ -75,16 +75,38 @@ class Navbar extends React.Component {
             <div className="tile is-vertical">
                 <div className="tile">
                     <div className="tile is-parent is-vertical">
-                        <article id="header" className="tile is-child notification">
-                        <p className="title">Vertical...</p>
-                        <p className="subtitle">Top tile</p>
+                        <article id="headerOutline" className="tile is-child notification">
+                          <div id="header" className="tile">
+                          <img id="logo" src="img/skyblue-quill.png" alt="logo" />
+                            <p className="title">Pen To Paper</p>
+                          </div>
+                          <i id="newNoteButton" className="fa fa-keyboard-o" aria-hidden="true"><a id="newNoteButton" class="button"> New Note</a></i>
                         </article>
                     </div>                  
                 </div> 
-                <Welcome />
+                <CreateNote />
             </div>
         </div>
     </div>
+     <footer id="footer" className="footer">
+  <div className="container">
+    <div className="content has-text-centered">
+      <p>
+        Created by <strong>Devin Blankenship</strong> for <a href="https://www.theironyard.com/locations/indianapolis.html">The Iron Yard</a> week 7 weekend assignment. 
+      </p>
+      <p>
+        <a className="icon" href="https://github.com/Failure2Fly/Create-a-notes-app">
+          <i className="fa fa-github"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
+</div>
+    
+
+
+
     
            
   }
