@@ -1,5 +1,7 @@
 import React from 'react'
 
+import store from './Reducers'
+
 // Load React Router
 import Notes from './components/Notes'
 import Welcome from './components/Welcome'

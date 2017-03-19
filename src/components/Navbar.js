@@ -21,9 +21,9 @@ class Navbar extends React.Component {
               </p>
             </div>
               <p className="panel-tabs">
-                <a className="is-active">All Notes</a>
+                <a className="is-active">Notebooks</a>
+                <a>All Notes</a>
                 <a>Tags</a>
-                <a>Notebooks</a>
               </p>
                 <a className="panel-block">
                   <span className="panel-icon">
@@ -61,7 +61,7 @@ class Navbar extends React.Component {
                   </span>
                   Ramblings
                 </a>
-                <label className="panel-block">
+                <label className="">
                 </label>
               <div className="panel-block">
                 <button className="button is-primary is-outlined is-fullwidth">
@@ -78,13 +78,13 @@ class Navbar extends React.Component {
                         <article id="headerOutline" className="tile is-child notification">
                           <div id="header" className="tile">
                           <img id="logo" src="img/skyblue-quill.png" alt="logo" />
-                            <p className="title">Pen To Paper</p>
+                            <p id="penToPaper" className="title">Pen To Paper</p>
                           </div>
-                          <i id="newNoteButton" className="fa fa-keyboard-o" aria-hidden="true"><a id="newNoteButton" class="button"> New Note</a></i>
+                          <i id="newNoteButton" className="fa fa-keyboard-o" aria-hidden="true"><a id="newNoteButton" class="button">New Note</a></i>
                         </article>
                     </div>                  
                 </div> 
-                <CreateNote />
+                <Welcome />
             </div>
         </div>
     </div>
@@ -92,7 +92,7 @@ class Navbar extends React.Component {
   <div className="container">
     <div className="content has-text-centered">
       <p>
-        Created by <strong>Devin Blankenship</strong> for <a href="https://www.theironyard.com/locations/indianapolis.html">The Iron Yard</a> week 7 weekend assignment. 
+        Created by <strong>Devin Blankenship</strong> for <a href="https://www.theironyard.com/locations/indianapolis.html">The Iron Yard</a> week 7, weekend assignment. 
       </p>
       <p>
         <a className="icon" href="https://github.com/Failure2Fly/Create-a-notes-app">

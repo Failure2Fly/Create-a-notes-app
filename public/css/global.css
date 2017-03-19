@@ -11,6 +11,7 @@ img {
 #logo {
     height: 100px;
     width: 100px;
+    padding: 0px 10px 0px 10px;
 }
 #newNoteButton {
     float: right;
@@ -20,18 +21,24 @@ img {
 }
 #createNote {
     height: 700px;
-    height: 500px;
+    height: 450px;
 }
 #writeNote {
-    height: 350px;
+    height: 300px;
 }
 #welcome {
     margin: 40px;
 }
 #header {
     background-color: #76E7CD;
+}
+#penToPaper {
     color: black;
     font-family: 'Petit Formal Script', cursive;
+    /*font-family: 'Allura', cursive;*/
+    /*font-family: 'Tangerine', cursive;*/
+    font-size: 90px;
+    padding: 0px 10px 0px 50px;
 }
 #headerOutline {
     background-color: #76E7CD;
