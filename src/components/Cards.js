@@ -36,6 +36,3 @@ class Cards extends React.Component {
 }
 
 export default Cards
-
-
-

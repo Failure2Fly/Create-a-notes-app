@@ -1,37 +1,25 @@
 import React from 'react'
+import store from 'store'
+import { connect } from 'react-router'
+import { browserHistory } from 'react-router' 
 
 class CreateNote extends React.Component {
 
   constructor(props) {
         super(props)
-        this.onClick = this.onClick.bind(this)
+        this.addNote = this.addNote.bind(this)
         this.state = {
-            title: '',
-            note: '',
-            url: '',
-            tag: '',
-            created_at: '',
-            updated_at: ''
+            title: title,
+            note: note,
+            url: url,
+            tag: tag,
+            created_at: now,
+            updated_at: now
         }
     }
-
-    // Handles the Add Todo button click, runs parent component addTodo method, and clears the state, causing a render()
-    onClick(addNote) {
-        // Call parent addTodo method
-        addNote(this.state.title, this.state.note, this.state.url, this.state.tag)
-
-        // Sets state of fields, and triggers render() again
-        this.setState({
-            title: '',
-            note: '',
-            url: '',
-            tag: '',
-            created_at: '',
-            updated_at: ''
-        })
-    }
-
+      
   render() {
+    var store = require ('store')
     return <div className="column">
             <div className="card">
               <header className="card-header">
