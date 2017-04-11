@@ -1,17 +1,13 @@
 import React from 'react'
-import Cards from './Cards'
-import Welcome from './Welcome'
-import CreateNote from './CreateNote'
+import { browserHistory } from 'react-router'
 
 class Navbar extends React.Component {
-
-
   render() {
     return <div>
     <div className="columns is-gapless">
     <div className="column is-2">
     <nav id="side-bar" className="panel">
-              <p id="random-quote" className="panel-heading">I think I did pretty well, considering I started out with nothing but a bunch of blank paper.<p><br/> - Steve Martin</p></p>
+              <p id="random-quote" className="panel-heading">I think I did pretty well, considering I started out with nothing but a bunch of blank paper.<br/> - Steve Martin</p>
             <div className="panel-block">
               <p className="control has-icon">
                 <input className="input is-small" type="text" placeholder="Search" />
@@ -22,7 +18,7 @@ class Navbar extends React.Component {
             </div>
               <p className="panel-tabs">
                 <a className="is-active">Notebooks</a>
-                <a>All Notes</a>
+                <a onClick={() => browserHistory.push('/all-notes')}>All Notes</a>
                 <a>Tags</a>
               </p>
                 <a className="panel-block">
@@ -80,11 +76,11 @@ class Navbar extends React.Component {
                           <img id="logo" src="img/skyblue-quill.png" alt="logo" />
                             <p id="penToPaper" className="title">Pen To Paper</p>
                           </div>
-                          <i id="newNoteButton" className="fa fa-keyboard-o" aria-hidden="true"><a id="newNoteButton" class="button">New Note</a></i>
+                          <i id="newNoteButton" className="fa fa-keyboard-o" aria-hidden="true"><a id="newNoteButton" className="button" onClick={() => browserHistory.push('/write-note')}>New Note</a></i>
                         </article>
                     </div>                  
                 </div> 
-                <Welcome />
+                {this.props.children}
             </div>
         </div>
     </div>

@@ -19,10 +19,6 @@ img {
     color: #077187;
     z-index: 1;
 }
-#createNote {
-    height: 700px;
-    height: 450px;
-}
 #writeNote {
     height: 300px;
 }
